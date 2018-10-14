@@ -1,14 +1,4 @@
 <?php
-
-$ary_1 = range(1,5);
-$ary_2 = range(6,10);
-
-print_r(shuffle_1($ary_1,100));
-shuffle_1($ary_2,100);
-print_r(shuffle_1($ary_1,100));
-shuffle_1($ary_1,400);
-shuffle_1($ary_1,500);
-
 function shuffle_fix_seed($ary,$seed){
     $rand_ary = range(1,count($ary));
     $tmp_ary = array();
@@ -30,4 +20,4 @@ function shuffle_fix_seed($ary,$seed){
     return $ret_ary;         
 }
 
-#test_text
+

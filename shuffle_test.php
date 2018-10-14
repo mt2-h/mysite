@@ -9,7 +9,7 @@ print_r(shuffle_1($ary_1,100));
 shuffle_1($ary_1,400);
 shuffle_1($ary_1,500);
 
-function shuffle_1($ary,$seed){
+function shuffle_fix_seed($ary,$seed){
     $rand_ary = range(1,count($ary));
     $tmp_ary = array();
     $ret_ary = array();
@@ -27,6 +27,7 @@ function shuffle_1($ary,$seed){
         $ret_ary[($v-1)] = $ary[($v-1)];
     }
 
-    return $ret_ary;
-           
+    return $ret_ary;         
 }
+
+#test_text
